@@ -1,0 +1,26 @@
+package com.example.rest;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.service.courseService;
+
+@RestController
+@RequestMapping("/api/course")
+public class restCourseController {
+
+	@Autowired EntityManager entity;
+	
+	@Autowired
+	courseService service;
+	
+	@PostMapping(value = "/cer")
+	public List<CertificateDto> getAllCertificate()
+	{
+		List<CertificateDto> l = certificateService.serachByPage();
+		return l;
+	}
+}

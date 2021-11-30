@@ -1,0 +1,18 @@
+package com.example.rest;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.service.courseService;
+@RestController
+@RequestMapping("/api/certificate")
+public class restCourseController {
+
+	@Autowired EntityManager entity;
+	
+	@Autowired
+	courseService service;
+	
+	public
+}

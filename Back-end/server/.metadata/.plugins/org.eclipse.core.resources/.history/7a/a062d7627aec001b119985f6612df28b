@@ -1,0 +1,8 @@
+package com.example.domain;
+
+@Entity
+@Table(name = "tbl_certificate")
+@XmlRootElement
+public class course {
+
+}

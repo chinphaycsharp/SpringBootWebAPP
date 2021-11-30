@@ -1,0 +1,6 @@
+package com.example.demo;
+
+@SpringBootApplication(scanBasePackages={"com.example.demo"})
+public class Application {
+
+}

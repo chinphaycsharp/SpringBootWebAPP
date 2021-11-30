@@ -1,0 +1,11 @@
+package com.example.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tbl_certificate")
+@XmlRootElement
+public class course {
+
+}

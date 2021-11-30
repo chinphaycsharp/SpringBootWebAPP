@@ -1,0 +1,21 @@
+package com.example.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tbl_certificate")
+public class course {
+	
+	private static final long serialVersionUID = 1L;
+	private String name;
+	private String description;
+	private Boolean status;
+	private int fee;
+	@Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+	private long id;
+}

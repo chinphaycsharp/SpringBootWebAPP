@@ -1,0 +1,13 @@
+package com.example.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.service.courseService;
+
+public class restCourseController {
+
+	@Autowired EntityManager entity;
+	
+	@Autowired
+	courseService service;
+}
